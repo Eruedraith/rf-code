@@ -1,0 +1,29 @@
+{
+  "name": "rf-code",
+  "version": "1.0.0",
+  "description": "styles",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "gulp": "^4.0.2",
+    "gulp-cli": "^2.2.0",
+    "gulp-notify": "^3.2.0",
+    "gulp-plumber": "^1.2.1"
+  },
+  "devDependencies": {
+    "gulp-sass": "^4.0.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile": "gulp default"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Eruedraith/rf-code.git"
+  },
+  "author": "Joshua Todd",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Eruedraith/rf-code/issues"
+  },
+  "homepage": "https://github.com/Eruedraith/rf-code#readme"
+}
