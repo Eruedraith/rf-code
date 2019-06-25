@@ -1,0 +1,27 @@
+// ============================================================
+//  UI ELEMENTS
+// ============================================================ 
+
+// Transitions
+@mixin transition($props) {
+  -webkit-transition: $props;
+  -moz-transition: $props;
+  -ms-transition: $props;
+  -o-transition: $props;
+  transition: $props;
+}
+
+// Box shadow
+@mixin box-shadow($value) {
+  -webkit-box-shadow: $value;
+  -moz-box-shadow: $value;
+  box-shadow: $value;
+  }
+  
+  @mixin text-shadow($value) {
+    -webkit-text-shadow: $value;
+    -moz-text-shadow: $value;
+    -ms-text-shadow: $value;
+    -o-text-shadow: $value;
+    text-shadow: $value;
+  }

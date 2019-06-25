@@ -1,0 +1,35 @@
+@import "variables.scss";
+@import "functions.scss";
+@import "mixins.scss";
+
+.solutions {
+  padding: 35px 0 45px;
+
+  &__top {
+  }
+
+  &__bot {
+    padding-top: 35px;
+  }
+
+  &__box {
+    @include transition($transition);
+    font-weight: bold;
+    &:hover {
+      cursor: pointer;
+      color: $blue;
+    }
+  }
+
+  &__icon {
+    text-transform: uppercase;
+    height: 116px;
+    max-width: 116px;
+    background-size: cover;
+    width: 116px;
+
+    & > img {
+      max-width: 116px;
+    }
+  }
+}

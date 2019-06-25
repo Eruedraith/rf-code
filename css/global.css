@@ -1,0 +1,36 @@
+/* ============================================================
+/*  TYPOGRAPHY
+/* ============================================================ */
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,700,700i,800&display=swap");
+html { font-size: 16px; line-height: 1.45; font-family: "Open Sans", sans-serif; -webkit-font-smoothing: antialiased; }
+
+body { font-family: "Open Sans", sans-serif; }
+
+h1, h2, h3, h4, h5 { font-family: "Open Sans", sans-serif; font-weight: normal; }
+
+p { font-family: "Open Sans", sans-serif; }
+
+h1 { font-size: 3.05187rem; }
+
+h2 { font-size: 2.44125rem; }
+
+h3 { font-size: 1.95312rem; }
+
+h4 { font-size: 1.5625rem; }
+
+h5 { font-size: 1.25rem; }
+
+p { font-size: 1rem; font-family: "Open Sans", sans-serif; }
+
+/* Text Utilities
+---------------------------------------------------------------------- */
+.text--lighter { font-weight: 400; }
+
+/* ============================================================
+/*  LAYOUT
+/* ============================================================ */
+/* ============================================================
+/*  UTILITIES
+/* ============================================================ */
+/** backgrounds **/
+.bg-gray { background: #f6f6f6; }

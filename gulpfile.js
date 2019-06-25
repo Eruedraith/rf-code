@@ -26,7 +26,7 @@ gulp.task('styles', function () {
   var stream = gulp
       .src([paths.src])
       .pipe(plumber({errorHandler: onError}))
-      .pipe(sass().on('error', sass.logError));
+      .pipe(sass({outputStyle: 'compact'}).on('error', sass.logError));
 
   return stream
       .pipe(gulp.dest(paths.dest));

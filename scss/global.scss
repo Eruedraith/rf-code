@@ -1,0 +1,76 @@
+@import "variables.scss";
+@import "functions.scss";
+
+/* ============================================================
+/*  TYPOGRAPHY
+/* ============================================================ */ 
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,700,700i,800&display=swap');
+
+html {
+  font-size: 16px;
+  line-height: 1.45;
+  font-family: $body;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  font-family: $body;
+}
+
+h1,h2,h3,h4,h5{
+  font-family: $header;
+  font-weight: normal;
+}
+
+p {
+  font-family: $body;
+}
+
+h1 {
+  font-size: px-to-rem(48.83px);
+  // smaller font size for mobile
+}
+
+h2 {
+  font-size: px-to-rem(39.06px);
+}
+
+h3 {
+  font-size: px-to-rem(31.25px);
+}
+
+h4 {
+  font-size: px-to-rem(25.00px);
+}
+
+h5 {
+  font-size: px-to-rem(20px);
+}
+
+p {
+  font-size: 1rem;
+  font-family: $body;
+}
+
+/* Text Utilities
+---------------------------------------------------------------------- */
+
+.text--lighter {
+  font-weight: 400;
+}
+
+/* ============================================================
+/*  LAYOUT
+/* ============================================================ */ 
+
+
+/* ============================================================
+/*  UTILITIES
+/* ============================================================ */
+
+/** backgrounds **/
+.bg-gray {
+  background: #f6f6f6;
+}
+
