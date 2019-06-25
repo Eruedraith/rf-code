@@ -1,5 +1,6 @@
 @import "variables.scss";
 @import "functions.scss";
+@import "mixins.scss";
 
 /* ============================================================
 /*  TYPOGRAPHY
@@ -21,10 +22,6 @@ body {
 h1,h2,h3,h4,h5{
   font-family: $header;
   font-weight: normal;
-}
-
-p {
-  font-family: $body;
 }
 
 h1 {
@@ -53,6 +50,10 @@ p {
   font-family: $body;
 }
 
+li {
+  font-size: 1rem;
+}
+
 /* Text Utilities
 ---------------------------------------------------------------------- */
 
@@ -60,17 +61,81 @@ p {
   font-weight: 400;
 }
 
+.bold {
+  font-weight: bold;
+}
+
+/* ============================================================
+/*  BUTTONS
+/* ============================================================ */
+
+.btn {
+  border-radius: 0;
+  @include transition($transition);
+  text-transform: uppercase;
+  font-size: px-to-rem(16px);
+  font-weight: bold;
+
+  &-primary {
+    background: $blue;
+    color: #fff;
+    border: 1px solid $blue;
+  
+    &:hover {
+      background: $dark-blue;
+      color: #fff;
+      border: 1px solid $dark-blue;
+    }
+  }
+
+  &-secondary {
+    background: $light-blue;
+    color: #fff;
+    border: 1px solid $light-blue;
+  
+    &:hover {
+      background: $blue;
+      color: #fff;
+      border: 1px solid $blue;
+    }
+  }
+}
+
+
+
 /* ============================================================
 /*  LAYOUT
 /* ============================================================ */ 
 
+.lg-container {
+  padding: 60px 0;
+}
+
+.md-container {
+  padding: 35px 0;
+}
+
+.sm-container {
+  padding: 25px 0;
+}
 
 /* ============================================================
 /*  UTILITIES
 /* ============================================================ */
 
 /** backgrounds **/
-.bg-gray {
-  background: #f6f6f6;
+
+.bg {
+  &--gray {
+    background: $bg-gray;
+  }
+
+  &--blue {
+    background: $dark-blue;
+  }
+
+  &--orange {
+    background: $orange;
+  }
 }
 

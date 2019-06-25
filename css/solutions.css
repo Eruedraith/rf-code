@@ -1,11 +1,15 @@
-.solutions { padding: 35px 0 45px; }
-
 .solutions__bot { padding-top: 35px; }
 
 .solutions__box { -webkit-transition: all 300ms ease; -moz-transition: all 300ms ease; -ms-transition: all 300ms ease; -o-transition: all 300ms ease; transition: all 300ms ease; font-weight: bold; }
 
 .solutions__box:hover { cursor: pointer; color: #007297; }
 
-.solutions__icon { text-transform: uppercase; height: 116px; max-width: 116px; background-size: cover; width: 116px; }
+.solutions__icon { text-transform: uppercase; height: 116px; max-width: 116px; background-size: cover; width: 116px; margin: 0 auto; }
 
 .solutions__icon > img { max-width: 116px; }
+
+.solutions__content__title { margin-bottom: 19px; }
+
+.solutions__content__subtitle { color: #929292; }
+
+.solutions__content__body { margin-top: 8px; margin-bottom: 20px; }

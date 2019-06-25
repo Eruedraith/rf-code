@@ -8,8 +8,6 @@ body { font-family: "Open Sans", sans-serif; }
 
 h1, h2, h3, h4, h5 { font-family: "Open Sans", sans-serif; font-weight: normal; }
 
-p { font-family: "Open Sans", sans-serif; }
-
 h1 { font-size: 3.05187rem; }
 
 h2 { font-size: 2.44125rem; }
@@ -22,15 +20,42 @@ h5 { font-size: 1.25rem; }
 
 p { font-size: 1rem; font-family: "Open Sans", sans-serif; }
 
+li { font-size: 1rem; }
+
 /* Text Utilities
 ---------------------------------------------------------------------- */
 .text--lighter { font-weight: 400; }
 
+.bold { font-weight: bold; }
+
+/* ============================================================
+/*  BUTTONS
+/* ============================================================ */
+.btn { border-radius: 0; -webkit-transition: all 300ms ease; -moz-transition: all 300ms ease; -ms-transition: all 300ms ease; -o-transition: all 300ms ease; transition: all 300ms ease; text-transform: uppercase; font-size: 1rem; font-weight: bold; }
+
+.btn-primary { background: #007297; color: #fff; border: 1px solid #007297; }
+
+.btn-primary:hover { background: #014B64; color: #fff; border: 1px solid #014B64; }
+
+.btn-secondary { background: #109fbf; color: #fff; border: 1px solid #109fbf; }
+
+.btn-secondary:hover { background: #007297; color: #fff; border: 1px solid #007297; }
+
 /* ============================================================
 /*  LAYOUT
 /* ============================================================ */
+.lg-container { padding: 60px 0; }
+
+.md-container { padding: 35px 0; }
+
+.sm-container { padding: 25px 0; }
+
 /* ============================================================
 /*  UTILITIES
 /* ============================================================ */
 /** backgrounds **/
-.bg-gray { background: #f6f6f6; }
+.bg--gray { background: #f6f6f6; }
+
+.bg--blue { background: #014B64; }
+
+.bg--orange { background: #EB8011; }

@@ -3,10 +3,6 @@
 @import "mixins.scss";
 
 .solutions {
-  padding: 35px 0 45px;
-
-  &__top {
-  }
 
   &__bot {
     padding-top: 35px;
@@ -27,9 +23,25 @@
     max-width: 116px;
     background-size: cover;
     width: 116px;
+    margin: 0 auto;
 
     & > img {
       max-width: 116px;
     }
+  }
+}
+
+.solutions__content {
+  &__title {
+    margin-bottom: 19px;
+  }
+
+  &__subtitle {
+    color: $text-light;
+  }
+
+  &__body {
+    margin-top: 8px;
+    margin-bottom: 20px;
   }
 }
