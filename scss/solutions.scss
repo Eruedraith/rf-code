@@ -11,11 +11,31 @@
   &__box {
     @include transition($transition);
     font-weight: bold;
+
     &:hover {
       cursor: pointer;
+    }
+
+    &:hover > p {
+      color: #000;
+    }
+
+    &:hover .solutions__icon {
+      transform: scale(1.09) translateY(-5px);
+    }
+
+    & > p {
+      text-transform: uppercase;
+      @include transition ($transition);
+    }
+
+    &.tab-link.current p {
       color: $blue;
+      font-weight: bold;
     }
   }
+
+
 
   &__icon {
     text-transform: uppercase;
@@ -23,25 +43,55 @@
     max-width: 116px;
     background-size: cover;
     width: 116px;
-    margin: 0 auto;
+    margin: 0 auto 8px;
+    @include transition($transition);
 
     & > img {
       max-width: 116px;
+    }
+
+    & > img.hidden {
+      display: none;
+    }
+
+    & > img.active {
+      display: inherit;
     }
   }
 }
 
 .solutions__content {
   &__title {
-    margin-bottom: 19px;
+    margin-bottom: 15px;
+    color: $dark-blue;
   }
 
   &__subtitle {
-    color: $text-light;
+    border-bottom: 2px solid $dark-blue;
+    padding-bottom: 25px;
+    letter-spacing: .25px;
+    font-size: 20px;
+    opacity: .7;
   }
 
   &__body {
-    margin-top: 8px;
-    margin-bottom: 20px;
+    padding-bottom: 12px;
   }
+}
+
+
+/**** Tabs *****/
+.tab-content{
+  display: none;
+}
+
+.tab-content.current{
+  display: inherit;
+  animation: fadeIn 1s ease-in-out;
+}
+
+// animation
+@keyframes fadeIn {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
 }

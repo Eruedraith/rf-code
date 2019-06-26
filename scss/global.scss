@@ -6,7 +6,7 @@
 /*  TYPOGRAPHY
 /* ============================================================ */ 
 
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,700,700i,800&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,300,400,400i,700,700i|Source+Sans+Pro:400,400i,600,700,700i&display=swap');
 
 html {
   font-size: 16px;
@@ -21,7 +21,7 @@ body {
 
 h1,h2,h3,h4,h5{
   font-family: $header;
-  font-weight: normal;
+  font-weight: 100;
 }
 
 h1 {
@@ -54,51 +54,97 @@ li {
   font-size: 1rem;
 }
 
+a {
+  @include transition($transition);
+}
+
+.body-container-wrapper a {
+  color: $blue;
+}
+
 /* Text Utilities
 ---------------------------------------------------------------------- */
 
-.text--lighter {
+.text--lighter, a.text--lighter, p.text--lighter {
   font-weight: 400;
 }
 
-.bold {
+.bold, a.bold, p.bold {
   font-weight: bold;
+}
+
+.text--primary-light, a.text--primary-light, p.text--primary-light {
+  color: $light-blue;
+}
+
+a.text--primary-light:hover {
+  color: $orange;
 }
 
 /* ============================================================
 /*  BUTTONS
 /* ============================================================ */
 
-.btn {
-  border-radius: 0;
-  @include transition($transition);
+.rf-btn {
+  display: inline-block;
+  font-weight: 600;
+  text-align: center;
+  letter-spacing: 1px;
   text-transform: uppercase;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border: 1px solid transparent;
+  height: auto;
+  padding: 10px 20px;
   font-size: px-to-rem(16px);
-  font-weight: bold;
+  font-family: $header;
+  font-weight: 600;
+  line-height: 1.5;
+  border-radius: 150px;
+  text-decoration: none;
+  box-shadow: none;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  cursor: pointer;
 
-  &-primary {
+  &--primary {
     background: $blue;
-    color: #fff;
-    border: 1px solid $blue;
+    color: #fff !important;
+    border: 2px solid $blue;
   
     &:hover {
       background: $dark-blue;
       color: #fff;
-      border: 1px solid $dark-blue;
+      border: 2px solid $dark-blue;
     }
   }
 
-  &-secondary {
+  &--secondary {
     background: $light-blue;
-    color: #fff;
-    border: 1px solid $light-blue;
+    color: #fff !important;
+    border: 2px solid $light-blue;
   
     &:hover {
-      background: $blue;
+      background: $dark-blue;
       color: #fff;
-      border: 1px solid $blue;
+      border: 2px solid $dark-blue;
     }
   }
+
+  &--clear {
+    background: transparent;
+    color: #fff;
+    border: 2px solid #fff;
+  
+    &:hover {
+      background: #fff;
+      color: $blue;
+      border: 2px solid #fff;
+    }
+  }
+
 }
 
 
@@ -139,3 +185,8 @@ li {
   }
 }
 
+
+/** alignments **/
+.centered {
+  margin: 0 auto;
+}

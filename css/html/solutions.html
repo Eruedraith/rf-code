@@ -1,0 +1,23 @@
+<!-- top of solutions -->
+
+<div class="container">
+  <div class="solutions md-container">
+    <div class="row">
+      <div class="col-md-8 text-center centered solutions__top">
+        <h3 class="text--uppercase">{{ module.top.title }}</h3>
+      </div>
+      <div class="col-md-10 text-center centered">
+         <p>{{ module.top.description }}</p>
+      </div>
+      <div class="col-md-10 solutions__bot d-flex justify-content-between centered">
+        {% for item in module.bottom %}
+        <div class="solutions__box">
+          <div class="solutions__icon" style="background: url({{item.icon.src}}); background-size: cover;"></div>
+          <p class="text--uppercase text-center">{{ item.bot_title }}</p>
+        </div>
+        {{item.title}}
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,12 +1,12 @@
 /* ============================================================
 /*  TYPOGRAPHY
 /* ============================================================ */
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,700,700i,800&display=swap");
-html { font-size: 16px; line-height: 1.45; font-family: "Open Sans", sans-serif; -webkit-font-smoothing: antialiased; }
+@import url("https://fonts.googleapis.com/css?family=Poppins:100,300,400,400i,700,700i|Source+Sans+Pro:400,400i,600,700,700i&display=swap");
+html { font-size: 16px; line-height: 1.45; font-family: "Source Sans Pro", sans-serif; -webkit-font-smoothing: antialiased; }
 
-body { font-family: "Open Sans", sans-serif; }
+body { font-family: "Source Sans Pro", sans-serif; }
 
-h1, h2, h3, h4, h5 { font-family: "Open Sans", sans-serif; font-weight: normal; }
+h1, h2, h3, h4, h5 { font-family: "Poppins", sans-serif; font-weight: 100; }
 
 h1 { font-size: 3.05187rem; }
 
@@ -18,28 +18,40 @@ h4 { font-size: 1.5625rem; }
 
 h5 { font-size: 1.25rem; }
 
-p { font-size: 1rem; font-family: "Open Sans", sans-serif; }
+p { font-size: 1rem; font-family: "Source Sans Pro", sans-serif; }
 
 li { font-size: 1rem; }
 
+a { -webkit-transition: all 300ms ease; -moz-transition: all 300ms ease; -ms-transition: all 300ms ease; -o-transition: all 300ms ease; transition: all 300ms ease; }
+
+.body-container-wrapper a { color: #007297; }
+
 /* Text Utilities
 ---------------------------------------------------------------------- */
-.text--lighter { font-weight: 400; }
+.text--lighter, a.text--lighter, p.text--lighter { font-weight: 400; }
 
-.bold { font-weight: bold; }
+.bold, a.bold, p.bold { font-weight: bold; }
+
+.text--primary-light, a.text--primary-light, p.text--primary-light { color: #109fbf; }
+
+a.text--primary-light:hover { color: #EB8011; }
 
 /* ============================================================
 /*  BUTTONS
 /* ============================================================ */
-.btn { border-radius: 0; -webkit-transition: all 300ms ease; -moz-transition: all 300ms ease; -ms-transition: all 300ms ease; -o-transition: all 300ms ease; transition: all 300ms ease; text-transform: uppercase; font-size: 1rem; font-weight: bold; }
+.rf-btn { display: inline-block; font-weight: 600; text-align: center; letter-spacing: 1px; text-transform: uppercase; vertical-align: middle; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; border: 1px solid transparent; height: auto; padding: 10px 20px; font-size: 1rem; font-family: "Poppins", sans-serif; font-weight: 600; line-height: 1.5; border-radius: 150px; text-decoration: none; box-shadow: none; transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out; cursor: pointer; }
 
-.btn-primary { background: #007297; color: #fff; border: 1px solid #007297; }
+.rf-btn--primary { background: #007297; color: #fff !important; border: 2px solid #007297; }
 
-.btn-primary:hover { background: #014B64; color: #fff; border: 1px solid #014B64; }
+.rf-btn--primary:hover { background: #014B64; color: #fff; border: 2px solid #014B64; }
 
-.btn-secondary { background: #109fbf; color: #fff; border: 1px solid #109fbf; }
+.rf-btn--secondary { background: #109fbf; color: #fff !important; border: 2px solid #109fbf; }
 
-.btn-secondary:hover { background: #007297; color: #fff; border: 1px solid #007297; }
+.rf-btn--secondary:hover { background: #014B64; color: #fff; border: 2px solid #014B64; }
+
+.rf-btn--clear { background: transparent; color: #fff; border: 2px solid #fff; }
+
+.rf-btn--clear:hover { background: #fff; color: #007297; border: 2px solid #fff; }
 
 /* ============================================================
 /*  LAYOUT
@@ -59,3 +71,6 @@ li { font-size: 1rem; }
 .bg--blue { background: #014B64; }
 
 .bg--orange { background: #EB8011; }
+
+/** alignments **/
+.centered { margin: 0 auto; }
