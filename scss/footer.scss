@@ -1,0 +1,110 @@
+@import "variables.scss";
+@import "functions.scss";
+@import "mixins.scss";
+
+footer {
+  color: #fff;
+  background: $dark-blue;
+  padding: 45px 0 65px;
+
+  p, h4 {
+    color: #fff;
+  }
+
+}
+
+#footer {
+
+  &__logo {
+    max-width: 200px;
+    margin-bottom: 17px;
+  }
+
+    &__social, &__contact {
+    margin:0;
+    padding: 0;
+    text-indent: 0;
+    list-style-type: none;
+
+    li {
+      display: inline-block;
+      margin: 0;
+      margin-bottom: 15px;
+      color: #fff;
+    }
+
+    li a {
+      color: #fff;
+
+      &:hover {
+        color: $orange;
+      }
+
+      & i {
+        padding-right: 10px;
+      }
+    }
+  }
+
+
+  &__social {
+    padding-top: 14px;
+    li {
+      font-size: 26px;
+      color: #fff;
+      padding-right: 10px;
+
+      &:last-child {
+        padding: 0;
+      }
+    }
+  }
+
+  &__contact {
+    li {
+      display: block;
+    }
+
+    li i {
+      font-size: 26px; 
+      padding-right: 10px;
+    }
+  }
+}
+
+// subfooter
+
+#sub-footer {
+  background: darken($dark-blue, 20%);
+  padding: 13px 0;
+  color: #fff;
+  font-size: 12px;
+
+  ul {
+    margin:0;
+    padding: 0;
+    text-indent: 0;
+    list-style-type: none;
+
+    li {
+      display: inline-block;
+      margin: 0;
+      color: #fff;
+      padding-right: 15px;
+      font-size: 12px;
+
+      &:last-child {
+        padding-right: 0;
+      }
+    }
+
+    li a {
+      color: #fff;
+      text-transform: uppercase;
+
+      &:hover {
+        color: $orange;
+      }
+    }
+  }
+}

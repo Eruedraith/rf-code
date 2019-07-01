@@ -36,6 +36,8 @@ a { -webkit-transition: all 300ms ease; -moz-transition: all 300ms ease; -ms-tra
 
 a.text--primary-light:hover { color: #EB8011; }
 
+.text--shadow { text-shadow: 1px 1px 1px #000; }
+
 /* ============================================================
 /*  BUTTONS
 /* ============================================================ */
@@ -52,6 +54,10 @@ a.text--primary-light:hover { color: #EB8011; }
 .rf-btn--clear { background: transparent; color: #fff; border: 2px solid #fff; }
 
 .rf-btn--clear:hover { background: #fff; color: #007297; border: 2px solid #fff; }
+
+.btn-group a, .btn-group button { margin-right: 10px; }
+
+.btn-group a:last-child, .btn-group button:last-child { margin-right: 0; }
 
 /* ============================================================
 /*  LAYOUT

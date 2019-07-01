@@ -20,6 +20,8 @@
 
 .solutions__icon > img.active { display: inherit; }
 
+.solutions__content { padding: 40px 0 55px; margin-top: 27px; }
+
 .solutions__content__title { margin-bottom: 15px; color: #014B64; }
 
 .solutions__content__subtitle { border-bottom: 2px solid #014B64; padding-bottom: 25px; letter-spacing: .25px; font-size: 20px; opacity: .7; }

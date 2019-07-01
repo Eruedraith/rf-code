@@ -81,6 +81,10 @@ a.text--primary-light:hover {
   color: $orange;
 }
 
+.text--shadow {
+  text-shadow: 1px 1px 1px #000;
+}
+
 /* ============================================================
 /*  BUTTONS
 /* ============================================================ */
@@ -145,6 +149,16 @@ a.text--primary-light:hover {
     }
   }
 
+}
+
+.btn-group {
+  a, button {
+    margin-right: 10px;
+    
+    &:last-child {
+      margin-right: 0;
+    }
+  }
 }
 
 

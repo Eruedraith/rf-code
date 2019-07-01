@@ -1,6 +1,8 @@
 .featured-posts { padding: 50px 0 60px; }
 
-.featured-posts__card { -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); -moz-box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); }
+.featured-posts__card { -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); -moz-box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); -webkit-transition: all 300ms ease; -moz-transition: all 300ms ease; -ms-transition: all 300ms ease; -o-transition: all 300ms ease; transition: all 300ms ease; }
+
+.featured-posts__card:hover { transform: scale(1.07) translateY(-8px); }
 
 .featured-posts__body { padding: 20px; background: #fff; border-radius: 0 0 6px 6px; }
 
