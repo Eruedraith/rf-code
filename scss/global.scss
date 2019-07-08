@@ -73,6 +73,10 @@ a {
   font-weight: bold;
 }
 
+.text--primary, p.text--primary {
+  color: $blue;
+}
+
 .text--primary-light, a.text--primary-light, p.text--primary-light {
   color: $light-blue;
 }
@@ -82,7 +86,15 @@ a.text--primary-light:hover {
 }
 
 .text--shadow {
-  text-shadow: 1px 1px 1px #000;
+  text-shadow: 0px 2px 3px rgba(0,0,0,0.4);
+}
+
+.text--white, a.text--white, h1.text--white, h2.text--white, h3.text--white, p.text--white {
+  color: #fff;
+}
+
+.text--lg {
+  font-size: 29px;
 }
 
 /* ============================================================
@@ -149,6 +161,18 @@ a.text--primary-light:hover {
     }
   }
 
+  &--white {
+    background: #fff;
+    color: $blue;
+    border: 2px solid #fff;
+
+    &:hover {
+      background: #fff;
+      color: $dark-blue;
+      border: 2px solid #fff;
+    }
+  }
+
 }
 
 .btn-group {
@@ -192,6 +216,10 @@ a.text--primary-light:hover {
 
   &--blue {
     background: $dark-blue;
+  }
+
+  &--light-blue {
+    background: $blue;
   }
 
   &--orange {

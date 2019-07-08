@@ -32,11 +32,17 @@ a { -webkit-transition: all 300ms ease; -moz-transition: all 300ms ease; -ms-tra
 
 .bold, a.bold, p.bold { font-weight: bold; }
 
+.text--primary, p.text--primary { color: #007297; }
+
 .text--primary-light, a.text--primary-light, p.text--primary-light { color: #109fbf; }
 
 a.text--primary-light:hover { color: #EB8011; }
 
-.text--shadow { text-shadow: 1px 1px 1px #000; }
+.text--shadow { text-shadow: 0px 2px 3px rgba(0, 0, 0, 0.4); }
+
+.text--white, a.text--white, h1.text--white, h2.text--white, h3.text--white, p.text--white { color: #fff; }
+
+.text--lg { font-size: 29px; }
 
 /* ============================================================
 /*  BUTTONS
@@ -54,6 +60,10 @@ a.text--primary-light:hover { color: #EB8011; }
 .rf-btn--clear { background: transparent; color: #fff; border: 2px solid #fff; }
 
 .rf-btn--clear:hover { background: #fff; color: #007297; border: 2px solid #fff; }
+
+.rf-btn--white { background: #fff; color: #007297; border: 2px solid #fff; }
+
+.rf-btn--white:hover { background: #fff; color: #014B64; border: 2px solid #fff; }
 
 .btn-group a, .btn-group button { margin-right: 10px; }
 
@@ -75,6 +85,8 @@ a.text--primary-light:hover { color: #EB8011; }
 .bg--gray { background: #f6f6f6; }
 
 .bg--blue { background: #014B64; }
+
+.bg--light-blue { background: #007297; }
 
 .bg--orange { background: #EB8011; }
 

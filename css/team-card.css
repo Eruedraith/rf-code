@@ -1,0 +1,13 @@
+.team-card { background: #fff; -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); -moz-box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); -webkit-transition: all 300ms ease; -moz-transition: all 300ms ease; -ms-transition: all 300ms ease; -o-transition: all 300ms ease; transition: all 300ms ease; }
+
+.team-card:hover { transform: scale(1.01) translateY(-10px); }
+
+.team-card__name { margin-bottom: 6px; }
+
+.team-card__title { display: block; margin-bottom: 7px; }
+
+.team-card__img { background-position: center; height: 250px; }
+
+.team-card__body { background: #fff; padding: 20px; }
+
+.team-card__social i { font-size: 28px; }

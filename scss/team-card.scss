@@ -1,0 +1,40 @@
+@import "variables.scss";
+@import "functions.scss";
+@import "mixins.scss";
+
+.team-card {
+  background: #fff;
+  -webkit-box-shadow: 0 0 20px rgba(0,0,0,0.1);
+  -moz-box-shadow: 0 0 20px rgba(0,0,0,0.1);
+  box-shadow: 0 0 20px rgba(0,0,0,0.1);
+  @include transition($transition);
+
+  &:hover {
+    transform: scale(1.01) translateY(-10px);
+  }
+
+  &__name {
+    margin-bottom: 6px;
+  }
+
+  &__title {
+    display: block;
+    margin-bottom: 7px;
+  }
+
+  &__img {
+    background-position: center;
+    height: 250px;
+  }
+
+  &__body {
+    background: #fff;
+    padding: 20px;
+  }
+
+  &__social {
+    & i {
+      font-size: 28px;
+    }
+  }
+}
